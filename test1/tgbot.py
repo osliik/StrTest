@@ -10,7 +10,6 @@ collection = db['messages']
 
 bot = telebot.TeleBot(TOKEN)
 
-# Handler for all messages
 @bot.message_handler(func=lambda message: True)
 def handle_message(message):
     message_text = message.text
